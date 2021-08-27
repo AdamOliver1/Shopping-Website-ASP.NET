@@ -1,0 +1,46 @@
+﻿@model List<ProductModel>
+
+@{
+    TempData["Title"] = "Shopping Cart";
+    decimal total = 0;
+    decimal memberTotal = 0;
+    if (Model != null)
+    {
+        Model.ForEach(p => memberTotal += (p.Price * (decimal)0.9));
+        Model.ForEach(p => total += p.Price);
+    }
+
+
+}
+
+<div class="col-sm-3 text-center container pb-5 ">
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            await Html.RenderPartialAsync("/Views/Shared/ProductPartialView/ProductInCart.cshtml", item);
+        }
+    }
+
+    <div class="py-2"><span class="d-inline-block align-middle text-sm text-muted font-weight-medium text-uppercase mr-2">Total As Guest:</span><span class="d-inline-block align-middle text-xl font-weight-medium">@total</span></div>
+    <div class="py-2"><span class="d-inline-block align-middle text-sm text-muted font-weight-medium text-uppercase mr-2">Total As Member:</span><span class="d-inline-block align-middle text-xl font-weight-medium">@memberTotal</span></div>
+    @if (Model != null && Model.Count > 0)
+    {
+        <a asp-controller="Home" asp-action="BuyCart" id="btnCheckOut" class="btn btn-style-1 btn-primary btn-block">
+            Checkout
+        </a>
+    }
+</div>
+
+
+
+@*@section Scripts{
+    <script src="~/js/ShoppingCart.js"></script>
+
+}*@
+
+
+
+
+

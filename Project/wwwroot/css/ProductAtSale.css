@@ -1,0 +1,14 @@
+﻿img.productImgAtSale {
+    width: 400px;
+    height: 400px;
+    object-fit: scale-down;
+}
+/*.imageAuto {
+    max-width: 100%;
+    max-height: 100%;
+}*/
+
+.arrowImg{
+   
+    background-color:lightgray;
+}

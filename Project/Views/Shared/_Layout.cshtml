@@ -1,0 +1,127 @@
+﻿@{ bool isUserLogin = Context.CheckIfUserLogin();
+    bool IsCurrentURL(string action, string controller)
+    {
+        string actionName = this.ViewContext.RouteData.Values["Action"].ToString();
+        string controllerName = this.ViewContext.RouteData.Values["Controller"].ToString();
+        if (actionName == action && controllerName == controller)
+        {
+            return true;
+        }
+        return false;
+
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="~/styles/vendor.min.css" rel="stylesheet" />
+    @*<link href="~/css/ProductAtSale.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link href="~/css/AddProduct.css" rel="stylesheet" />
+        <link href="~/css/products.css" rel="stylesheet" />
+        <link href="~/css/Login.css" rel="stylesheet" />
+        <link href="~/css/Sidebar.css" rel="stylesheet" />
+        <link href="~/css/About.css" rel="stylesheet" />
+        <link href="~/css/site.css" rel="stylesheet" />
+        <link href="~/css/UpBar.css" rel="stylesheet" />
+        <link href="~/css/ProductAtSale.css" rel="stylesheet" />*@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+</head>
+<body id="bodyWeb">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="float-left" asp-controller="Home" asp-action="Index">
+            <img width="40" height="40" src="~/lib/img/logo-social-sq.png" />
+        </a>
+        <div class="navbar-inner-center">
+            <h3 class="font-weight-bold inner-div-navbar text-white">@TempData["Title"] Page</h3>
+
+        </div>
+    </nav>
+    <div class="sidebar-container">
+        @if (isUserLogin)
+        {
+            await Html.RenderPartialAsync("/Views/Shared/LayoutPartialView/LoginSucceed.cshtml");
+        }
+        else
+        {
+            await Html.RenderPartialAsync("/Views/Shared/LayoutPartialView/Login.cshtml", new LoginViewModel());
+        }
+        <ul class="sidebar-navigation">
+
+            <li class="header">Navigation</li>
+            <li>
+                <a asp-controller="Home" asp-action="Index" class="@if(IsCurrentURL("Index","Home")) { <text>disabledA </text> }  ">
+                    <i class="fa fa-home" aria-hidden="true"></i> Home
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Home" asp-action="ShoppingCart" class="@if(IsCurrentURL("ShoppingCart","Home")) { <text>disabledA </text> }">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i> Shopping Cart
+                </a>
+            </li>
+            <li>
+                <a asp-controller="User" asp-action="Registration" class="@if(IsCurrentURL("Registration","User")) { <text>disabledA </text> }">
+                    <i class="fa fa-users" aria-hidden="true">   </i>    @{if (isUserLogin)
+                        {
+                            <span>
+                                Update
+                            </span> }
+                        else
+                        {
+                            <span>
+                                SignUp
+                            </span> } }
+
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Home" asp-action="About" class="@if(IsCurrentURL("About","Home")) { <text>disabledA </text> }">
+                    <i class="fa fa-cog" aria-hidden="true"></i> About Us
+                </a>
+            </li>
+            <li>
+                @if (isUserLogin)
+                {
+                    <a asp-controller="Home" asp-action="AddProduct" class="@if(IsCurrentURL("AddProduct","Home")) { <text>disabledA </text> }">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>Add Product
+                    </a>
+                }
+
+            </li>
+        </ul>
+    </div>
+    <div class="content-container">
+
+        @*<div class="container-fluid">*@
+        <div>
+
+            @RenderBody()
+
+        </div>
+    </div>
+    @*<div class="main-body">
+        <div class="row gutters-sm">
+            <div class="col-md-8">
+                <div class="container">
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
+                <div class="row gutters-sm">
+                </div>
+            </div>
+        </div>
+    </div>*@
+    @*<script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>*@
+<script src="~/scripts/vendor.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

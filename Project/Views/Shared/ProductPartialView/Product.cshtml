@@ -1,0 +1,42 @@
+﻿@model List<ProductModel>
+
+
+    <div class="container d-flex justify-content-center mt-50 mb-50">
+        <div class="row">
+            @{
+                if (Model != null && Model.Count > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        <div class="col-md-4 mt-2 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body fullWidth">
+                                    <div class="fullWidth card-img-actions"> <img src="@item.Img1" class="card-img img-fluid" width="96" height="35" alt=""> </div>
+                                </div>
+                                <div class="card-body bg-light text-center fullWidth">
+                                    <div class="mb-2">
+
+                                        <h3 class="font-weight-semibold mb-2"> <a asp-controller="Home" asp-action="ProductDetails" asp-route-Id="@item.Id" class="text-default mb-2" data-abc="true">@item.Title</a> </h3> <a href="#" class="text-muted" data-abc="true">@item.ShortDescription</a>
+                                    </div>
+                                    <h3 class="mb-0 font-weight-semibold">$@item.Price</h3>
+                                    <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                                    <a asp-controller="Home" asp-action="ProductDetails" asp-route-Id="@item.Id" class="text-default mb-2" data-abc="true">
+                                        Details
+                                    </a>   
+                                    <div>
+                                        <form method="post" asp-controller="Home" asp-action="AddToCart">
+                                            <input type="hidden" class="productDetailsId" name="Id" value="@item.Id" />
+                                            <input type="hidden" value="@false" name="goToCart" class="goToCart" />
+                                            <button class="AddToCartBtnIndex btn bg-cart">
+                                                Add to wishlist
+                                            </button>
+                                        </form>                                                                           
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                  
+                    }
+                }
+            }
+        </div>
+    </div>

@@ -1,0 +1,62 @@
+﻿
+#bodyWeb {
+    background-color: white;
+    width: auto;
+}
+.centerDiv {
+    text-align: center;
+}
+
+.containerDiv {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.centered {
+     height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.disabledA {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+/*.logo {
+    display: block;
+    padding: 50px;
+}*/
+
+#carouselExampleControls {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+}
+
+/*#lowerDivDetails {
+    float: left;
+    display: inline-block;
+    width: 45%;
+    overflow: hidden;
+}*/
+
+
+#cardExtension{
+    width:1000px;
+}

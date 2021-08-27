@@ -1,0 +1,29 @@
+﻿@model LoginViewModel
+
+
+<div class="sidebar-header">
+    <h3>Login</h3>
+</div>
+
+<form asp-controller="User" asp-action="Login" method="post">
+    <div>
+        <p>UserName:</p>
+        <input asp-for="Username" id="UserNameLogin" name="UserName" />
+        <p>Password:</p>
+        <input type="password" asp-for="Password" id="PasswordLogin" name="Password" />
+    </div>
+
+    <div class="controls">
+        <button id="btnSignupLogin" class="btn btn-primary btnLogin" type="submit">Login</button>
+    </div>
+</form>
+
+<div>
+    <form method="get" asp-controller="User" asp-action="Registration">
+        <button class="btn btn-success btnLogin" type="submit">SignUp</button>
+    </form>
+
+
+</div>
+
+

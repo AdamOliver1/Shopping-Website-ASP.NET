@@ -1,0 +1,12 @@
+﻿@model ProductModel
+
+<div class="centerDiv">
+    <form method="post" asp-controller="Home"  asp-action="RemoveFromCart" asp-route-productId="@Model.Id" >
+        <label class="checkbox">
+            <input type="checkbox" checked="" name="chb_e" class="submitShoppingCart h3">
+           
+            <a asp-controller="Home" asp-action="ProductDetails" asp-route-Id="@Model.Id" class="h3">@Model.Title -  @Model.Price$</a> 
+          
+        </label>
+    </form> 
+</div>

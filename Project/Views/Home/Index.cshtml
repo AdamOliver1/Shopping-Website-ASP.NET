@@ -1,0 +1,22 @@
+﻿@model List<ProductModel>
+@{
+    TempData["Title"] = "Home";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<div class="col-sm-3 text-center container pb-5" >
+    <a asp-controller="Home" asp-action="SortByTitle" class="btn btn-outline-primary btn-lg">
+        Sort By Title
+    </a>
+    <a asp-controller="Home" asp-action="SortByDate" class="btn btn-outline-primary btn-lg">
+        Sort By Date
+    </a>
+</div>
+
+
+<div class="text-center">
+    @{await Html.RenderPartialAsync("/Views/Shared/ProductPartialView/Product.cshtml");}
+</div>
+
+@*@section Scripts{
+    <script src="~/js/ProductDetails.js"></script>
+}*@

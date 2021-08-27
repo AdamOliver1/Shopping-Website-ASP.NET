@@ -1,0 +1,116 @@
+﻿@model UserModel
+
+@{ 
+    bool isUserLogin = Context.CheckIfUserLogin();
+    if(isUserLogin) TempData["Title"] = "Update";
+    else TempData["Title"] = "SignUp";
+    }
+
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="row">
+    <div class="col-sm-3 text-center container pb-5 ">
+        <form class="form-horizontal row align-items-center" method="post" asp-controller="User" asp-validation-summary="All" asp-action="RegistrationSumbit">
+
+            <fieldset>
+                <div class="col-md-8 offset-md-2" id="legend">
+                    <p class="">Register</p>
+                </div>
+                <div class="col-md-8 offset-md-2 control-group">
+                    <label class="control-label" asp-for="FirstName" for="FirstName">First Name</label>
+                    <div class="controls">
+                        <input type="text" asp-for="FirstName" id="FirstName" name="FirstName" placeholder="" class="input-xlarge">
+                        <span class="text-danger" asp-validation-for="FirstName"></span>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2 control-group">
+                    <label class="control-label" asp-for="LastName" for="LastName">Last Name</label>
+                    <div class="controls">
+                        <input asp-for="LastName" type="text" id="LastName" name="LastName" placeholder="" class="input-xlarge">
+                        <span class="text-danger" asp-validation-for="LastName"></span>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2 control-group">
+                    <!-- Username -->
+                    <label class="control-label" asp-for="UserName" for="UserName">UserName</label>
+                    <div class="controls">
+                        @if (isUserLogin)
+                        {
+                    <input type="text" disabled id="UsernameRegistration"  value="@Model.UserName"  placeholder="" class="input-xlarge">
+                        <input type="hidden" value="@Model.UserName" asp-for="UserName" id="UserName" />}                      
+                        else
+                        {
+                        <input type="text"  asp-for="UserName" id="UsernameRegistration" name="UserName" placeholder="" class="input-xlarge">}
+                        <span class="text-danger" asp-validation-for="UserName"></span>
+                    </div>
+                    <div id="status"></div>
+                </div>
+
+                <div class="col-md-8 offset-md-2 control-group">
+                    <!-- E-mail -->
+                    <label class="control-label" asp-for="Email" for="email">E-mail</label>
+                    <div class="controls">
+                        <input type="email" asp-for="Email" id="email"   class="input-xlarge">
+                        <span class="text-danger" asp-validation-for="Email"></span>
+
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2 control-group">
+                    <!-- E-mail -->
+                    <label class="control-label" asp-for="BirthDate">Birth Date</label>
+                    <div class="controls">
+                        <input type="date" min="1920-01-01"  onkeypress="return false" placeholder="mm/dd/yy" id="DateRegistration" name="BirthDate" asp-for="BirthDate" class="input-xlarge ">
+                        <span class="text-danger" asp-validation-for="BirthDate"></span>
+
+                    </div>
+                </div>
+
+                <div class="col-md-8 offset-md-2 control-group">
+                    <!-- Password-->
+                    <label class="control-label" asp-for="Password" for="Password">Password</label>
+                    <div class="controls">
+                        <input type="password" asp-for="Password"  name="Password" placeholder="" class="input-xlarge">
+                        <span class="text-danger" asp-validation-for="Password"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-8 offset-md-2 control-group">
+                    <!-- Password -->
+                    <label class="control-label" asp-for="ConfirmPassword" for="password_confirm">Password (Confirm)</label>
+                    <div class="controls">
+                        <input type="password" asp-for="ConfirmPassword" id="ConfirmPassword" name="ConfirmPassword" placeholder="" class="input-xlarge">
+                        <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-8 offset-md-2 control-group">
+                    <!-- Button -->
+                    <div class="controls">
+                        
+                        <button id="btnSumbit" type="submit">
+                            @{if (isUserLogin)
+                                {
+                                    <span>
+                                        Update
+                                    </span> }
+                                else
+                                {
+                                    <span>
+                                        SignUp
+                                    </span> } }
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
+</div>
+
+@*@section Scripts{
+    <script src="~/js/Registration.js"></script>
+}*@
+

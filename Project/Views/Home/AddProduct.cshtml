@@ -1,0 +1,78 @@
+﻿@model ProductModel
+@{ TempData["Title"] = "Add Product"; }
+
+    <div class="center">
+        <div class="col-sm-3 text-center container pb-5 ">
+            <form class="form-horizontal row align-items-center" enctype="multipart/form-data" method="post" asp-controller="Home" asp-action="AddProduct">
+
+                <fieldset>
+                    <div class="col-md-8 offset-md-2" id="legend">
+                        <h6 class="">Add Product</h6>
+                    </div>
+                    <div class="col-md-8 offset-md-2 control-group">
+                        <label class="control-label" asp-for="Title" for="Title">Title</label>
+                        <div class="controls">
+                            <input type="text" asp-for="Title" id="Title" name="Title" placeholder="" class="inputText input-xlarge">
+                            <span class="text-danger" asp-validation-for="Title"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-2 control-group">
+                        <label class="control-label" asp-for="ShortDescription" for="ShortDescription">ShortDescription</label>
+                        <div class="controls">
+                            <textarea asp-for="ShortDescription" type="text" id="ShortDescription" name="ShortDescription" placeholder="" class="inputText description"></textarea>
+                            <span class="text-danger" asp-validation-for="ShortDescription"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-2 control-group">
+                        <label class="control-label" asp-for="LongDescription" for="LongDescription">LongDescription</label>
+                        <div class="controls">
+                            <textarea type="text" asp-for="LongDescription" id="LongDescription" name="LongDescription" placeholder="" class="inputText description"></textarea>
+                            <span class="text-danger" asp-validation-for="LongDescription"></span>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 offset-md-2 control-group">
+                        <label class="control-label" asp-for="Price" for="Price">Price</label>
+                        <div class="controls">
+                            <input type="number" min="1" max="@int.MaxValue" asp-for="Price" id="Price" name="Price" placeholder="" class="inputText input-xlarge">
+                            <span class="text-danger" asp-validation-for="Price"></span>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 offset-md-2 control-group">                     
+                        <label class="control-label" asp-for="Img1File" for="Img1File">Image</label>
+                        <div class="controls">
+                            <input type="file" asp-for="Img1File" id="Img1File" name="Img1File" accept=".jpg, .jpeg, .png" placeholder="" class="input-xlarge">
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-2 control-group">
+                        <label class="control-label" asp-for="Img2File" for="Img2File">Image</label>
+                        <div class="controls">
+                            <input type="file" asp-for="Img2File" id="Img2File" name="Img2File" placeholder="" class="input-xlarge">
+                         
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-2 control-group">
+                        <label class="control-label" asp-for="Img3File" for="Img3File">Image</label>
+                        <div class="controls">
+                            <input type="file" asp-for="Img3File" id="Img3File" name="Img3File" placeholder="" class="input-xlarge">
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-2 control-group">
+                        <div class="controls">
+                            <button id="btnAddProduct" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+
+@*@section Scripts{ 
+    <script src="~/js/AddProduct.js"></script>
+}*@

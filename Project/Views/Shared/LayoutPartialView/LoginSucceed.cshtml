@@ -1,0 +1,15 @@
+﻿@{
+
+    var name = Context.GetUsername();
+    if (DateTime.Now.Hour > 03 && DateTime.Now.Hour < 11)
+    {<h3 >Good Morning @name</h3>}
+else if (DateTime.Now.Hour >= 11 && DateTime.Now.Hour < 17)
+{<h3 >Good afternoon @name</h3>}
+else
+{<h3 >Good Evening @name</h3>}
+
+<a asp-controller="User" asp-action="Logout" class="btn btn-primary">
+    Logout
+</a>
+
+}
