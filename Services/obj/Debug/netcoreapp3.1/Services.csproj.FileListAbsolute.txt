@@ -1,0 +1,43 @@
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Services.dll
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Services.pdb
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Dal.dll
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Dal.pdb
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.dll
+C:\Users\User\source\repos\Programming\מכללת סלע - תיקיות\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.pdb
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Services.dll
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Services.pdb
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Dal.dll
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Dal.pdb
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.dll
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\mainProject\Services\obj\Debug\netcoreapp3.1\Services.pdb
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\bin\Debug\netcoreapp3.1\Services.dll
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\bin\Debug\netcoreapp3.1\Services.pdb
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\bin\Debug\netcoreapp3.1\Dal.dll
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\bin\Debug\netcoreapp3.1\Dal.pdb
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\obj\Debug\netcoreapp3.1\Services.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\obj\Debug\netcoreapp3.1\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\obj\Debug\netcoreapp3.1\Services.dll
+C:\Users\User\source\repos\Programming\SELA\Others\projects\ShoppingWebProject\dsf\mainProject\Services\obj\Debug\netcoreapp3.1\Services.pdb
